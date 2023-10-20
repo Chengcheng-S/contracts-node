@@ -1,0 +1,148 @@
+{
+  "version": "3.4",
+  "log": [
+    {
+      "contracts/Box.sol:Box": {
+        "src": "contracts/Box.sol:5",
+        "version": {
+          "withMetadata": "8496cc71d1a9b60636af9d3ad86d783b4122fce35f99fdeb5b490ff4114c9cb1",
+          "withoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f",
+          "linkedWithoutMetadata": "cba9f8cf52e3c449631a04ea218a6cedcaf7c366669cfc257c89a008266c768f"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:6"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.19"
+      }
+    },
+    {
+      "contracts/Box.sol:Box": {
+        "src": "contracts/Box.sol:7",
+        "version": {
+          "withMetadata": "cfbcccc9c95eb3b303a87c9859dc6861548127acae86ec89ba3caa9a7a6c598b",
+          "withoutMetadata": "5c03ef2f790c052e517c4e18804d817dc010ecf34505733b54a9ac694bd634e1",
+          "linkedWithoutMetadata": "5c03ef2f790c052e517c4e18804d817dc010ecf34505733b54a9ac694bd634e1"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "store(uint256)",
+          "retrieve()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Box",
+            "src": "contracts/Box.sol:12"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_value",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "Box",
+              "src": "contracts/Box.sol:8"
+            },
+            {
+              "label": "_auth",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_contract(Auth)83",
+              "contract": "Box",
+              "src": "contracts/Box.sol:10"
+            }
+          ],
+          "types": {
+            "t_contract(Auth)83": {
+              "label": "contract Auth",
+              "numberOfBytes": "20"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.19"
+      },
+      "contracts/access-control/Auth.sol:Auth": {
+        "src": "contracts/access-control/Auth.sol:4",
+        "version": {
+          "withMetadata": "7903423431ed84b473f33cc072523dda4e6bc37fd26363bf3a88c4a17cdcde19",
+          "withoutMetadata": "baeb829d8ff3127d01145cc514e8d9fa68a92498bcc8ae24673f598c0a347e00",
+          "linkedWithoutMetadata": "baeb829d8ff3127d01145cc514e8d9fa68a92498bcc8ae24673f598c0a347e00"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(address)",
+          "isAdministrator(address)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Auth",
+            "src": "contracts/access-control/Auth.sol:7"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "_adminaddress",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address",
+              "contract": "Auth",
+              "src": "contracts/access-control/Auth.sol:5"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true,
+          "namespaces": {}
+        },
+        "solcVersion": "0.8.19"
+      }
+    }
+  ]
+}
